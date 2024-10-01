@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalasActivity">
+
+    <TextView
+        android:id="@+id/separacao"
+        android:layout_width="335dp"
+        android:layout_height="33dp"
+        android:fontFamily="@font/inter"
+        android:text="─────────────────"
+        android:textColor="@color/purple"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472"
+        tools:text="─────────────────" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="433dp"
+        android:layout_height="100dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sala1"
+        android:layout_width="181dp"
+        android:layout_height="90dp"
+        android:background="@color/purple"
+        android:fontFamily="@font/inter"
+        android:text="nome sala"
+        android:textColor="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="641dp" />
+
+    <SearchView
+        android:id="@+id/searchView_salas"
+        android:layout_width="276dp"
+        android:layout_height="45dp"
+        android:background="@color/whitepurple"
+        android:backgroundTint="@color/whitepurple"
+        android:queryHint="PESQUISAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_entrar_sala1"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:background="@color/purple"
+        android:fontFamily="@font/inter"
+        android:text="Entrar"
+        android:textColor="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_link_sala1"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:background="@color/purple"
+        android:fontFamily="@font/inter"
+        android:text="Link"
+        android:textColor="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_entrar_sala2"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:background="@color/purple"
+        android:fontFamily="@font/inter"
+        android:text="ENTRAR"
+        android:textColor="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_link_sala2"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:background="@color/purple"
+        android:fontFamily="@font/inter"
+        android:text="LINK"
+        android:textColor="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_fechar_salas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/whitepurple"
+        android:fontFamily="@font/inter_semibold"
+        android:text="VOLTAR"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_nova_sala"
+        android:layout_width="135dp"
+        android:layout_height="70dp"
+        android:background="@color/yellow"
+        android:fontFamily="@font/inter_semibold"
+        android:text="CRIAR SALA"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_perfil_salas"
+        android:layout_width="151dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="200dp"
+        android:background="@color/orange"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Perfil"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3" />
+
+    <TextView
+        android:id="@+id/textView_privadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="SALAS PRIVADAS:"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="SALAS PÚBLICAS:"
+        android:textAlignment="textStart"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sala2"
+        android:layout_width="181dp"
+        android:layout_height="90dp"
+        android:background="@color/purple"
+        android:fontFamily="@font/inter"
+        android:text="Nome sala"
+        android:textColor="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
