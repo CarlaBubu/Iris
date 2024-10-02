@@ -34,14 +34,7 @@ public class NovaSalaActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), SalasActivity.class));
             }
         });
-
-        Button buttonConfig = findViewById(R.id.button_novo_cadastro);;
-        buttonConfig.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SalasActivity.class));
-            }
-        });
+        
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

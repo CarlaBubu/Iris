@@ -8,7 +8,7 @@
     tools:context=".EditarPerfilActivity">
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/editText_descricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.6" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editText_username2"
         android:layout_width="254dp"
         android:layout_height="52dp"
         android:ems="10"
@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.475" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editText_nome2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
@@ -61,7 +61,7 @@
         app:layout_constraintVertical_bias="0.25" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/editText_leitura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -78,7 +78,7 @@
         app:layout_constraintVertical_bias="0.71" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/editText_senha4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -165,7 +165,7 @@
         app:srcCompat="@drawable/design_sem_nome__3_" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
+        android:id="@+id/button_excluir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/whitepurple"
