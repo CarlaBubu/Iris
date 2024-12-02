@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EsqueciSenhaActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="RECUPERAÇÃO DA SENHA"
+        android:textColor="@color/orange"
+        android:textColorHighlight="@color/orange"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRecuperar"
+        android:layout_width="264dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="USERNAME:"
+        android:inputType="text"
+        android:textColorHint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <EditText
+        android:id="@+id/editEmailAddressRecuperar"
+        android:layout_width="264dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="E-MAIL:"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_recuperar"
+        android:layout_width="145dp"
+        android:layout_height="61dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/inter_semibold"
+        android:text="RECUPERAR"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_voltarRecuperar"
+        android:layout_width="105dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/whitepurple"
+        android:fontFamily="@font/inter_semibold"
+        android:text="VOLTAR"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <EditText
+        android:id="@+id/TextPassword_senhaNova"
+        android:layout_width="264dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="SENHA NOVA"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
+
+    <EditText
+        android:id="@+id/TextPassword_confirmar"
+        android:layout_width="264dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="CONFIRME A SENHA"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

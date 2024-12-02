@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1_nova_sala"
+        android:layout_width="86dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/im_fell_dw_pica_italic"
+        android:text="ÍRIS"
+        android:textColor="#FF5722"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <EditText
+        android:id="@+id/senha_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="49dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="SENHA:"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_acessar"
+        android:layout_width="208dp"
+        android:layout_height="45dp"
+        android:background="@color/orange"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Acessar"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_fechar_NovaSala"
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        android:background="@color/whitepurple"
+        android:fontFamily="@font/inter_semibold"
+        android:text="ESQUECI A SENHA"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="49dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="E-MAIL:"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.467" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_novo_cadastro"
+        android:layout_width="132dp"
+        android:layout_height="47dp"
+        android:background="@color/whitepurple"
+        android:fontFamily="@font/inter_semibold"
+        android:text="NOVO CADASTRO"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="352dp"
+        android:layout_height="247dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        app:srcCompat="@drawable/logo_roxa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

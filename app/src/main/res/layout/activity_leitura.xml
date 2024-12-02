@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeituraActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout7"
+        android:layout_width="0dp"
+        android:layout_height="102dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout8"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout7"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_perfil_leitura"
+        android:layout_width="151dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="200dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/inter_semibold"
+        android:text="PERFIL"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout7"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout7"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout7"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout7" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="118dp"
+        android:layout_height="101dp"
+        android:layout_marginEnd="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout8"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout7"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout7"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout7"
+        app:srcCompat="@drawable/logo_amarela" />
+
+    <TextView
+        android:id="@+id/textView_livro"
+        android:layout_width="364dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="nome do livro"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout8"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout8"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout8"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout7" />
+
+    <ImageView
+        android:id="@+id/imgPdf"
+        android:layout_width="520dp"
+        android:layout_height="608dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout8"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sair_sala"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/inter"
+        android:text="SAIR"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPdf"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_voltar_pagina"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/inter"
+        android:text="←"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPdf"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_avancar_pagina"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/inter"
+        android:text="→"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPdf"
+        app:layout_constraintVertical_bias="0.576" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

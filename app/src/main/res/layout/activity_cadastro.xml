@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroActivity">
+
+    <EditText
+        android:id="@+id/nome_cadastro"
+       android:layout_width="293dp"
+       android:layout_height="59dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="NOME"
+        android:inputType="text"
+        android:textColor="@color/purple"
+        android:textColorHint="@color/purple"
+        android:textColorLink="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.293" />
+
+    <EditText
+        android:id="@+id/email_cadastro"
+        android:layout_width="293dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="E-MAIL"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/purple"
+        android:textColorHint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <EditText
+        android:id="@+id/senha_cadastro"
+        android:layout_width="293dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="CRIE UMA SENHA"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.668" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_cadastrar"
+        android:layout_width="145dp"
+        android:layout_height="61dp"
+        android:background="@color/orange"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Cadastrar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.798" />
+
+    <EditText
+        android:id="@+id/username_cadastro"
+        android:layout_width="293dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="USERNAME"
+        android:inputType="text"
+        android:textColor="@color/purple"
+        android:textColorHint="@color/purple"
+        android:textColorLink="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_fechar_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/whitepurple"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Voltar"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="89dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView_cadastro"
+        android:layout_width="265dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="NOVO CADASTRO"
+        android:textColor="@color/orange"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
